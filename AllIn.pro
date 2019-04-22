@@ -5,10 +5,11 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = All-In
+TARGET = AllIn
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -25,10 +26,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    poker.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    poker.h
 
 FORMS += \
         mainwindow.ui
+
+RESOURCES += \
+    ../pic/allin.qrc
